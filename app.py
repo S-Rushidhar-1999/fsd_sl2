@@ -3,7 +3,6 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-# Use Book objects in the list, not dicts
 class Book(BaseModel):
     id: int
     title: str
